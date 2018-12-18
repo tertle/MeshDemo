@@ -1,0 +1,19 @@
+{
+    "name": "MeshDemo",
+    "references": [
+        "Unity.Entities",
+		"Unity.Entities.Hybrid",
+        "Unity.Mathematics",
+		"Unity.Burst",
+		"Unity.Collections",
+		"Unity.Rendering.Hybrid"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
