@@ -5,7 +5,6 @@ using Unity.Collections;
 using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
-using UnityEngine;
 
 public struct MeshScale : IComponentData
 {

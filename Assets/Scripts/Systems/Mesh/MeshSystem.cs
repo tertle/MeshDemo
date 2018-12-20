@@ -39,17 +39,6 @@ namespace BovineLabs.Systems.Mesh
         {
             this.entitySet.Clear();
 
-            /*// TODO skip the job and just do chunk iteration on the main thread?
-            // This was kind of legacy for old event cleanup
-            var gatherMeshDirty = new GatherMeshDirty
-            {
-                Entities = this.entities.ToConcurrent(),
-            };
-
-            gatherMeshDirty.Schedule(this).Complete();
-
-            while (this.entities.TryDequeue(out var entity))
-            {*/
             var meshDirtyType = this.GetArchetypeChunkComponentType<MeshDirty>(true);
 
             var chunks = this.meshDirtyQuery.CreateArchetypeChunkArray(Allocator.TempJob);
